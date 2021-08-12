@@ -17,18 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yya-My-elo">
-                                <rect key="frame" x="151" y="431" width="114" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yya-My-elo">
+                                <rect key="frame" x="150" y="430.5" width="114" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Clique aqui!"/>
                                 <connections>
                                     <action selector="mostrarAlerta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CgD-KW-BLF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oi, sou uma Label" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="20" highlighted="YES" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5OO-7v-vmO">
+                                <rect key="frame" x="129" y="804" width="156" height="24"/>
+                                <accessibility key="accessibilityConfiguration" hint="Just a label" label="test_label">
+                                    <accessibilityTraits key="traits" playsSound="YES" staticText="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="5OO-7v-vmO" secondAttribute="bottom" constant="34" id="9zM-5t-F5P"/>
+                            <constraint firstItem="5OO-7v-vmO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAZ-hM-2rR"/>
+                            <constraint firstItem="yya-My-elo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tYN-FI-sWd"/>
+                            <constraint firstItem="yya-My-elo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8C-s1-tCs"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btn" destination="yya-My-elo" id="Q9G-Xi-aL9"/>
